@@ -32,10 +32,10 @@ Or add the following to your composer.json's require-dev section and `composer u
     <li><a href="#Make-View">Make View</a></li>
     <li><a href="#Log-Clear">Log Clear</a></li>
   </ol>
-</div>
+</div>\
 <!-- End list of command -->
 
-\
+
 ## Make Repository
 
 __Create a repository Class.__\
@@ -117,7 +117,7 @@ class UserRepository
 ```
 
 
-\
+
 ## Make Service
 
 __Create a Service Class.__\
@@ -149,6 +149,8 @@ php artisan module:make-service Backend\UserService
 The above will create a **Services** directory inside the **{Module}** directory.
 
 
+
+
 ## Make Trait
 
 __Create a Trait.__\
@@ -177,7 +179,9 @@ or
 php artisan module:make-trait Backend\HasAuth
 ```
 The above will create a **Traits** directory inside the **{Module}** directory.
-\
+
+
+
 
 
 ## Make View
@@ -208,13 +212,17 @@ php artisan module:make-view user\index
 ```
 The above will create a **blade** file inside the **{Module}/Resources/views/** directory.
 
-\
+
+
+
 ## Log Clear
 
 `php artisan log:clear`
 
 The above will deleted all old log data from **/storage/logs/** directory.
-\
+
+
+
 
 # License
 
