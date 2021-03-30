@@ -32,9 +32,10 @@ Or add the following to your composer.json's require-dev section and `composer u
     <li><a href="#Make-View">Make View</a></li>
     <li><a href="#Log-Clear">Log Clear</a></li>
   </ol>
-</div>\
+</div>
 <!-- End list of command -->
 
+<br />
 
 ## Make Repository
 
@@ -116,6 +117,7 @@ class UserRepository
 
 ```
 
+<br />
 
 
 ## Make Service
@@ -132,7 +134,7 @@ or
 php artisan make:service Backend\UserService
 ```
 The above will create a **Services** directory inside the **App** directory.
-\
+
 
 ###### In [nWidart/laravel-modules](https://github.com/nWidart/laravel-modules) Modules
 
@@ -149,7 +151,7 @@ php artisan module:make-service Backend\UserService
 The above will create a **Services** directory inside the **{Module}** directory.
 
 
-
+<br />
 
 ## Make Trait
 
@@ -183,6 +185,7 @@ The above will create a **Traits** directory inside the **{Module}** directory.
 
 
 
+<br />
 
 ## Make View
 __Create a view.__\
@@ -214,6 +217,7 @@ The above will create a **blade** file inside the **{Module}/Resources/views/** 
 
 
 
+<br />
 
 ## Log Clear
 
