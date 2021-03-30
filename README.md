@@ -24,8 +24,7 @@ Or add the following to your composer.json's require-dev section and `composer u
 ## Artisan Command List
 
 <!-- List Of Command -->
-<details open="open">
-  <summary>Commands</summary>
+<div>
   <ol>
     <li><a href="#Make-Repository">Make Repository</a></li>
     <li><a href="#Make-Service">Make Service</a></li>
@@ -33,7 +32,7 @@ Or add the following to your composer.json's require-dev section and `composer u
     <li><a href="#Make-View">Make View</a></li>
     <li><a href="#Log-Clear">Log Clear</a></li>
   </ol>
-</details>
+</div>
 <!-- End list of command -->
 
 ### Make Repository
@@ -96,73 +95,7 @@ php artisan module:make-repository Backend\UserRepository -i Blog
 ```
 Here you need to put extra `-i` flag.
 The above will create a **Repositories** directory inside the **{Module}** directory.
-
-
-
-### Make Service
-\
-__Create a Service Class.__\
-`php artisan make:service your-service-name`
-
-Example:
-```
-php artisan make:service UserService
-```
-or
-```
-php artisan make:service Backend\UserService
-```
-The above will create a **Services** directory inside the **App** directory.
-
-###### In [nWidart/laravel-modules](https://github.com/nWidart/laravel-modules) Modules
-
-__Create a Service Class.__\
-`php artisan module:make-service your-service-name {module-name}`
-
-Example:
-```
-php artisan module:make-service UserService
-```
-or
-```
-php artisan module:make-service Backend\UserService
-```
-The above will create a **Services** directory inside the **{Module}** directory.
-
-
-## Make-Trait
-
-__Create a Trait.__\
-`php artisan make:trait your-trait-name`
-
-Example:
-```
-php artisan make:trait HasAuth
-```
-or
-```
-php artisan make:trait Backend\HasAuth
-```
-The above will create a **Traits** directory inside the **App** directory.
-
-###### In [nWidart/laravel-modules](https://github.com/nWidart/laravel-modules) Modules
-
-__Create a Trait.__\
-`php artisan module:make-trait your-trait-name {module-name}`
-
-Example:
-```
-php artisan module:make-trait HasAuth
-```
-or
-```
-php artisan module:make-trait Backend\HasAuth
-```
-The above will create a **Traits** directory inside the **{Module}** directory.
-
-
-
-
+/
 
 __An Example of created repository class:__
 
@@ -181,6 +114,108 @@ class UserRepository
 
 
 ```
+
+
+### Make Service
+\
+__Create a Service Class.__\
+`php artisan make:service your-service-name`
+
+Example:
+```
+php artisan make:service UserService
+```
+or
+```
+php artisan make:service Backend\UserService
+```
+The above will create a **Services** directory inside the **App** directory.
+\
+
+###### In [nWidart/laravel-modules](https://github.com/nWidart/laravel-modules) Modules
+
+`php artisan module:make-service your-service-name {module-name}`
+
+Example:
+```
+php artisan module:make-service UserService
+```
+or
+```
+php artisan module:make-service Backend\UserService
+```
+The above will create a **Services** directory inside the **{Module}** directory.
+
+
+## Make Trait
+
+__Create a Trait.__\
+`php artisan make:trait your-trait-name`
+
+Example:
+```
+php artisan make:trait HasAuth
+```
+or
+```
+php artisan make:trait Backend\HasAuth
+```
+The above will create a **Traits** directory inside the **App** directory.
+
+###### In [nWidart/laravel-modules](https://github.com/nWidart/laravel-modules) Modules
+
+`php artisan module:make-trait your-trait-name {module-name}`
+
+Example:
+```
+php artisan module:make-trait HasAuth
+```
+or
+```
+php artisan module:make-trait Backend\HasAuth
+```
+The above will create a **Traits** directory inside the **{Module}** directory.
+\
+
+
+## Make View
+__Create a view.__\
+`php artisan make:view your-view-file-name`
+
+Example:
+```
+php artisan make:view index
+```
+or
+```
+php artisan make:view user\index
+```
+The above will create a **blade** file inside the **/resource/views/** directory.
+
+###### In [nWidart/laravel-modules](https://github.com/nWidart/laravel-modules) Modules
+
+`php artisan module:make-view your-view-file-name {module-name}`
+
+Example:
+```
+php artisan module:make-view index
+```
+or
+```
+php artisan module:make-view user\index
+```
+The above will create a **blade** file inside the **{Module}/Resouces/views/** directory.
+
+
+## Log Clear
+
+`php artisan log:clear`
+
+The above will deleted all old log data from **/storage/logs/** directory.
+
+
+
+
 
 
 The MIT License (MIT). Please see [License](LICENSE) for more information.
