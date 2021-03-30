@@ -204,7 +204,7 @@ or
 ```
 php artisan module:make-view user\index
 ```
-The above will create a **blade** file inside the **{Module}/Resouces/views/** directory.
+The above will create a **blade** file inside the **{Module}/Resources/views/** directory.
 
 
 ## Log Clear
@@ -212,10 +212,9 @@ The above will create a **blade** file inside the **{Module}/Resouces/views/** d
 `php artisan log:clear`
 
 The above will deleted all old log data from **/storage/logs/** directory.
+/
+/
 
-
-
-
-
+# License
 
 The MIT License (MIT). Please see [License](LICENSE) for more information.
