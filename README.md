@@ -35,8 +35,9 @@ Or add the following to your composer.json's require-dev section and `composer u
 </div>
 <!-- End list of command -->
 
-### Make Repository
 \
+## Make Repository
+
 __Create a repository Class.__\
 `php artisan make:repository your-repository-name`
 
@@ -95,7 +96,7 @@ php artisan module:make-repository Backend\UserRepository -i Blog
 ```
 Here you need to put extra `-i` flag.
 The above will create a **Repositories** directory inside the **{Module}** directory.
-/
+\
 
 __An Example of created repository class:__
 
@@ -116,8 +117,9 @@ class UserRepository
 ```
 
 
-### Make Service
 \
+## Make Service
+
 __Create a Service Class.__\
 `php artisan make:service your-service-name`
 
@@ -206,14 +208,13 @@ php artisan module:make-view user\index
 ```
 The above will create a **blade** file inside the **{Module}/Resources/views/** directory.
 
-
+\
 ## Log Clear
 
 `php artisan log:clear`
 
 The above will deleted all old log data from **/storage/logs/** directory.
-/
-/
+\
 
 # License
 
