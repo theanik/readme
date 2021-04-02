@@ -108,7 +108,7 @@ namespace App\Repositories;
 
 class UserRepository
 {
-    public function __constuct()
+    public function __construct()
     {
         //
     }
